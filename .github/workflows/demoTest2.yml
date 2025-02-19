@@ -1,0 +1,15 @@
+name: Workflow local
+on: [push, workflow_dispatch]
+
+jobs:
+  buildJob:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Build simulation
+       run: echo "Build en cours"
+  testJob:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Tests simulation
+       run: echo "Tests en cours"
+#workflow_dispatch pour lancer manuellement via l'IHM Github
